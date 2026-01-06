@@ -36,7 +36,7 @@ export const AuthProvider = ({ children }) => {
     try {
       const result = await signInWithPopup(auth, googleProvider);
       const user = result?.user;
-      console.log(user);
+      // console.log(user);
 
       setUser(user);
       toast.success("Login successfull");
@@ -55,11 +55,11 @@ export const AuthProvider = ({ children }) => {
       if (user) {
         setUser(user);
         setLoading(false);
-        console.log("user is logged in");
+        // console.log("user is logged in");
       } else {
         setUser(null);
         setLoading(false);
-        console.log("user is logged out");
+        // console.log("user is logged out");
       }
     });
 

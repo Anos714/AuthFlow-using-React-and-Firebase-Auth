@@ -21,7 +21,7 @@ const Login = () => {
     try {
       setLoading(true);
       const result = await userLogin(data);
-      console.log(result);
+      // console.log(result);
       if (!result?.user) {
         toast.error("Something wrong occurred");
         reset();
